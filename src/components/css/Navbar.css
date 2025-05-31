@@ -1,0 +1,20 @@
+.nav-container{
+    background-color: red;
+    padding:2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+}
+
+.a-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+}
+
+.logo {
+    width: 200px; 
+    height: auto; 
+  }
