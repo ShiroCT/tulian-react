@@ -1,6 +1,7 @@
 import "./css/Navbar.css"
 import CartWidget from "./CartWidget"
 import { NavLink } from "react-router-dom"
+import Cart from "./Cart"
  
  const Navbar = () => {
      return(
@@ -13,7 +14,7 @@ import { NavLink } from "react-router-dom"
                 <NavLink style={{fontWeight:"bold", textDecoration:'none', color:'white'}} to="/category/germánica">📗Idiomas Germanicos</NavLink>
                 <NavLink style={{fontWeight:"bold", textDecoration:'none', color:'white'}} to="/category/asiatica">📒Idiomas Asiaticos</NavLink>
             </div>
-             <CartWidget/>
+            <NavLink to={'/cart'}> <CartWidget/> </NavLink>
          </nav>
      )
  }

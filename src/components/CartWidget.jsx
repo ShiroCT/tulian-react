@@ -1,15 +1,16 @@
-const CartWidget = () => {
+import { Badge } from "react-bootstrap";
+import {  IoCartSharp } from "react-icons/io5";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+
+const CartWidgetReactIcons = () =>{
+const {cartQuantity}=useContext(CartContext)
+
     return(
         <div>
-            <span style={{fontSize: '30px'}}>🛒</span>
-            <span style={{
-        backgroundColor: 'yellow', 
-        color: 'black', 
-        padding: '5px', 
-        borderRadius: '5px' 
-      }}>8</span>
+            <IoCartSharp fontSize={'1.5rem'} />
+            {cartQuantity() > 0 && <Badge bg="warning">{cartQuantity()}</Badge>}
         </div>
     )
 }
-
-export default CartWidget
+export default CartWidgetReactIcons

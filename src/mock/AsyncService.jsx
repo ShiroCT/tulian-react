@@ -1,16 +1,16 @@
-const products = [
+export const products = [
+    
+    //{
+        //id:'01',
+        //name:'Español',
+        //price:2000,
+        //description: 'El idioma hablado en Argentina, México, España',
+        //stock:30,
+        //img:'https://i.postimg.cc/kX8fnyf5/Espa-ol.webp',
+        //category:'latino'
+    //},
     {
-        id:'01',
-        name:'▶Español',
-        price:2000,
-        description: 'El idioma hablado en Argentina, México, España',
-        stock:30,
-        img:'https://i.postimg.cc/kX8fnyf5/Espa-ol.webp',
-        category:'latino'
-    },
-    {
-        id:'02',
-        name:'▶Frances',
+        name:'Frances',
         price:2500,
         description:'El idioma hablando en Francia, Canadá (provincia de Quebec), Bélgica',
         stock:25,
@@ -18,8 +18,7 @@ const products = [
         category:'latino'
     },
     {
-        id:'03',
-        name:'✅Ingles',
+        name:'Ingles',
         price:2500,
         stock:30,
         description:'El idioma hablando en Estados Unidos, Reino Unido, Australia',
@@ -27,8 +26,7 @@ const products = [
          category:'germánica'
     },
     {
-        id:'04',
-        name:'✅Aleman',
+        name:'Aleman',
         price:2000,
         stock:20,
         description:'El idioma hablando Alemania, Austria, Suiza',
@@ -36,8 +34,7 @@ const products = [
         category:'germánica'
     },
     {
-        id:'05',
-        name:'✴Chino',
+        name:'Chino',
         price:3000,
         stock:30,
         description:'El idioma hablando China, Taiwán, Singapur',
@@ -45,8 +42,7 @@ const products = [
         category:'asiatica'
     },
     {
-        id:'06',
-        name:'✴Japones',
+        name:'Japones',
         price:3000,
         stock:20,
         description:'El idioma hablando Japón, Palau, Okinawa',
@@ -76,7 +72,7 @@ export const getOneProduct = (id) =>{
                 let oneProduct= products.find((item)=> item.id === id)
                 resolve(oneProduct)
             }else{
-                reject('🛑ERROR🛑')
+                reject('Hubo un error, intente más tarde')
             }
         },3000)
     })
