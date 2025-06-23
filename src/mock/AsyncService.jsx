@@ -1,14 +1,5 @@
 export const products = [
     
-    //{
-        //id:'01',
-        //name:'Español',
-        //price:2000,
-        //description: 'El idioma hablado en Argentina, México, España',
-        //stock:30,
-        //img:'https://i.postimg.cc/kX8fnyf5/Espa-ol.webp',
-        //category:'latino'
-    //},
     {
         name:'Frances',
         price:2500,
@@ -58,7 +49,7 @@ export const getProducts = () =>{
             if(!error){
                 resolve(products)
             }else{
-                reject('Hubo un error, intente más tarde')
+                reject('Un ocurrido un error')
             }
         },3000)
     })
@@ -72,10 +63,9 @@ export const getOneProduct = (id) =>{
                 let oneProduct= products.find((item)=> item.id === id)
                 resolve(oneProduct)
             }else{
-                reject('Hubo un error, intente más tarde')
+                reject('Un ocurrido un error')
             }
         },3000)
     })
 }
 
-//Capitulo 3//

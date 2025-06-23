@@ -11,20 +11,11 @@ const ItemDetailContainer = () => {
     const [cargando, setCargando]= useState(false)
     const [invalid, setInvalid]= useState(false)
     const {itemId} = useParams()
-   
-
-
-//FIREBASE
 
   useEffect(()=>{
     setCargando(true)
-    //conectarnos con nuestra coleccion
     const productsCollection= collection(db, "cursos")
-    //crear una referencia al documento que queremos traer
     const docRef= doc(productsCollection,itemId)
-    //VERSION CORTA
-    //const docRef= doc(db, "productos", itemId)
-    //traer un documento
     getDoc(docRef)
     .then((res)=>{
       if(res.data()){
@@ -37,40 +28,11 @@ const ItemDetailContainer = () => {
     .finally(()=> setCargando(false))
   },[])
 
-
-
-
-
-
-
-
-
-
-
-
-    //PROMESA
-    //usando la promesa que usamos en itemlistcontainer
-    // useEffect(()=>{
-    //     getProducts()
-    //     // .then((respuesta)=> setDetalle(respuesta[1]))
-    //     .then((response)=> setDetalle(response.find((item)=> item.id === '03')))
-    //     .catch((error)=> console.log(error))
-    // },[])
-
-    //     useEffect(()=>{
-    //       setCargando(true)
-    //     getOneProduct(itemId)
-    //     .then((response)=> setDetalle(response))
-    //     .catch((error)=> console.log(error))
-    //     .finally(()=> setCargando(false))
-    // },[])
-
-
     if(invalid){
       return(
         <div>
-          <h2>El producto no existe! 😅</h2>
-          <Link className='btn btn-dark'>Volver a Home</Link>
+          <h2>El producto no se encuentra disponible ⛔🦜</h2>
+          <Link className='btn btn-danger'>Volver a Home</Link>
         </div>
       )
     }

@@ -1,5 +1,5 @@
 import { Badge } from "react-bootstrap";
-import {  IoCartSharp } from "react-icons/io5";
+import { FaCartArrowDown } from "react-icons/fa";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
@@ -8,7 +8,7 @@ const {cartQuantity}=useContext(CartContext)
 
     return(
         <div>
-            <IoCartSharp fontSize={'1.5rem'} />
+            <FaCartArrowDown fontSize={'2rem'} color="black"/>
             {cartQuantity() > 0 && <Badge bg="warning">{cartQuantity()}</Badge>}
         </div>
     )

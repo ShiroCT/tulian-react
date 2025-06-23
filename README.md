@@ -1,12 +1,38 @@
-# React + Vite
+# E-commerce "Parlare"🦜
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta pagina eta hecha bajo las consignas del curso de "CODERHOUSER-React JS"
+Esta pagina web, "Parlare", es un ecommerce para obtener cursos de distintos idiomas de manera online a modo de parodia a "Duolingo"
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![app](/public/Pantalla.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación 🛠🦜
+
+1. Clone el repositorio
+2. Hacer el comando `cd tulian-react` para ir a la carpeta del proyecto.
+3. Intalar las dependencias usando `npm install`
+4. Levante la app en su servidor local ejecutando el comando `npm run dev` 
+
+---
+
+### Version Host 💻🦜
+
+Vea el proyecto en el siguiente link:[Coder Flex]
+
+---
+
+## Librerias utilizadas 📚🦜
+
+[React Bootstrap](https://react-bootstrap.netlify.app/) - Usada para estilos  
+[React Router Official Documentation](https://reactrouter.com/) -Usada para iconos
+[React Icons](https://react-icons.github.io/react-icons/) -Usada para navegación por rutas
+[Davidhu](https://www.davidhu.io/react-spinners/) -Usada para incorporar spinners en carga
+[Sweetalert](https://sweetalert2.github.io/) -Usada para ventanas de alerta
+[Firebase](https://firebase.google.com/) -Usada como base de datos
+[React Hook Form](https://react-hook-form.com/)- Usada para validación de Datos
+---
+
+Desarrollado por Christian Tulian 

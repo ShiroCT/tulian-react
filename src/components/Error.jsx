@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <div>
         <h2>🛑 Un error a acurrido 🛑</h2>
-        <Link className='btn btn-dark' to='/'>Volver a home</Link>
+        <Link className='btn btn-dark' to='/'>Volver a la pagina principal</Link>
     </div>
   )
 }
