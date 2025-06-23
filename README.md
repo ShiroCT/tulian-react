@@ -20,19 +20,19 @@ Esta pagina web, "Parlare", es un ecommerce para obtener cursos de distintos idi
 
 ### Version Host 💻🦜
 
-Vea el proyecto en el siguiente link:[Coder Flex]
-
+Vea el proyecto en el siguiente link:[tulian-react](https://github.com/ShiroCT/tulian-react.git)
+[tulian-react](https://github.com/ShiroCT/tulian-react.git)
 ---
 
 ## Librerias utilizadas 📚🦜
 
-[React Bootstrap](https://react-bootstrap.netlify.app/) - Usada para estilos  
-[React Router Official Documentation](https://reactrouter.com/) -Usada para iconos
-[React Icons](https://react-icons.github.io/react-icons/) -Usada para navegación por rutas
-[Davidhu](https://www.davidhu.io/react-spinners/) -Usada para incorporar spinners en carga
-[Sweetalert](https://sweetalert2.github.io/) -Usada para ventanas de alerta
-[Firebase](https://firebase.google.com/) -Usada como base de datos
-[React Hook Form](https://react-hook-form.com/)- Usada para validación de Datos
+- [React Bootstrap](https://react-bootstrap.netlify.app/) - Usada para estilos  
+- [React Router Official Documentation](https://reactrouter.com/) -Usada para iconos
+- [React Icons](https://react-icons.github.io/react-icons/) -Usada para navegación por rutas
+- [Davidhu](https://www.davidhu.io/react-spinners/) -Usada para incorporar spinners en carga
+- [Sweetalert](https://sweetalert2.github.io/) -Usada para ventanas de alerta
+- [Firebase](https://firebase.google.com/) -Usada como base de datos
+- [React Hook Form](https://react-hook-form.com/)- Usada para validación de Datos
 ---
 
 Desarrollado por Christian Tulian 
